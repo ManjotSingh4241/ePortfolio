@@ -1,0 +1,141 @@
+/* General reset */
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  
+}
+
+:root {
+  --hue: 223;
+  --bg: white;
+  --fg: hsl(var(--hue), 10%, 10%);
+  --primary: hsl(var(--hue), 90%, 55%);
+  --shine: hsla(0, 0%, 100%, 0.7);
+  --shadow: hsla(0, 0%, 0%, 0.1);
+}
+
+body {
+  background-color: var(--bg); /* Set background color */
+  color: var(--fg);
+  font: 1em/1.5 sans-serif;
+  height: 100vh;
+  perspective: 600px;
+  transition: background-color 0.3s;
+
+}
+
+
+.carousel {
+  top:150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em; /* Add padding to position carousel */
+}
+
+.card {
+  width: auto;
+  max-width: 32em;  /* Increase width to make it "fat" */
+  height: auto; /* Increase height */
+  background: linear-gradient(135deg, #1e90ff, #4169e1); /* Glossy gradient background */
+  border-radius: 1em; /* Rounded corners for smoother look */
+  box-shadow: 0 0.8em 2em rgba(0, 0, 0, 0.5), 0 0.5em 1em rgba(0, 0, 0, 0.3); /* Depth shadow */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  font-family: Arial, sans-serif;
+  transform: translateZ(0); /* Ensure proper rendering */
+}
+
+/* Shiny effect */
+.card::before {
+  content: '';
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.6), transparent 70%);
+  transform: rotate(45deg);
+  animation: shine 5s infinite ease-in-out;
+  pointer-events: none; /* Ensure it's just a visual effect */
+}
+
+@keyframes shine {
+  0% {
+    top: -150%;
+    left: -150%;
+  }
+  50% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: 150%;
+    left: 150%;
+  }
+}
+
+.card img {
+  width: 200px;  /* Adjust image size */
+  height: 200px;
+  margin-top: 10px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 0.5em;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.card p {
+  margin: 0.3em 0;
+  font-size: 1em;
+  word-wrap: break-word; 
+  text-align: center;
+}
+
+
+/* Navigation buttons */
+.buttons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.nav-button {
+  padding: 0.5em 1em;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  box-shadow: 0 0.3em 0.8em var(--shadow);
+}
+
+/* Animation keyframes */
+@keyframes rotate {
+  from, to {
+    animation-timing-function: ease-in;
+    transform: rotateY(-10deg);
+  }
+  25%, 75% {
+    animation-timing-function: ease-out;
+    transform: rotateY(0deg);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    transform: rotateY(10deg);
+  }
+}
+  
