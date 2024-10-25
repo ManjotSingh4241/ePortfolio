@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./cards.css";
-import testImg from "../assets/manjot-portfolio.jpg";
+import Halloween from "../assets/Halloween-GraphicDesign.jpg";
 
 function GraphicDesigning() {
   const cardData = [
     {
-      title: "Card 1",
+      title: "Halloween Invitation Card",
       description:
-        "manjot dfaaaaafffffffffffffffffffff adffffffffffff aedoooooooooooooo aoeeeeeeeeeeeeeeeeeeeeeeeee gfffffffffwer f ewf ew fewf e g  w g ewr  gwr  gsr gsr g",
-      image: testImg,
+        "This Year enjoy the halloween with your Loved Ones and invite them to your Party with this cool, creepy invitation card!",
+      image: Halloween,
     },
     {
       title: "Card 2",
