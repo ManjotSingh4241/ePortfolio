@@ -226,6 +226,8 @@
   .profile-photo{
     margin-top: -100px;
     margin-bottom: 10px;
+    width: 150px;
+    height:150px;
   }
   .work{
     display: block;
