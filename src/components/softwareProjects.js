@@ -6,7 +6,7 @@ function softwareProjects() {
   return (
     <>
       <body className="background">
-        <div className="navbar">
+        <div className="navbar1">
           <Navbar />
         </div>
 
