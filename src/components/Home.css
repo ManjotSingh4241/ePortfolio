@@ -4,6 +4,10 @@
   font-style: normal;
 }
 
+.navbar{
+  margin-bottom: -30px;
+}
+
 .agdasima-bold {
   font-family: "Agdasima", sans-serif;
   font-weight: 700;

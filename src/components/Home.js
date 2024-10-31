@@ -20,7 +20,9 @@ function Home() {
 
   return (
     <>
-      <Navbar />
+      <div className="navbar">
+        <Navbar />
+      </div>
       <div className="body">
         <div className="profile-photo" />
         <div className="Name">
@@ -38,12 +40,25 @@ function Home() {
         </div>
 
         <div id="cards">
-          <div id="github" onClick={() => window.open("https://github.com/ManjotSingh4241", "_blank")}>
+          <div
+            id="github"
+            onClick={() =>
+              window.open("https://github.com/ManjotSingh4241", "_blank")
+            }
+          >
             <img src={github} alt="GitHub Logo" className="logo" />
             <h3 className="roboto-slab-bold">Github</h3>
           </div>
 
-          <div id="linkedin" onClick={() => window.open("https://www.linkedin.com/in/manjot-singh777/", "_blank")}>
+          <div
+            id="linkedin"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/manjot-singh777/",
+                "_blank"
+              )
+            }
+          >
             <img src={linkedin} alt="Project Logo" class="logo" />
             <h3 className="roboto-slab-bold">Linked in</h3>
           </div>
@@ -66,12 +81,23 @@ function Home() {
             <h3 className="roboto-slab-bold">Graphic Designing</h3>
           </div>
 
-          <div id="gmail" onClick={() => window.open("mailto:mjotsingh.dev@gmail.com")}>
+          <div
+            id="gmail"
+            onClick={() => window.open("mailto:mjotsingh.dev@gmail.com")}
+          >
             <img src={gmail} alt="Project Logo" class="logo" />
             <h3 className="roboto-slab-bold">Gmail</h3>
           </div>
 
-          <div id="instagram" onClick={() => window.open("https://www.instagram.com/code_helowrld/profilecard/?igsh=bnp1ZXppc3pyaHhn", "_blank")}>
+          <div
+            id="instagram"
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/code_helowrld/profilecard/?igsh=bnp1ZXppc3pyaHhn",
+                "_blank"
+              )
+            }
+          >
             <img src={instagram} alt="Project Logo" class="logo" />
             <h3 className="roboto-slab-bold">Instagram</h3>
           </div>
