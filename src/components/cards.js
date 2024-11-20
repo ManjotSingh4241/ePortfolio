@@ -3,6 +3,7 @@ import "./cards.css";
 import Halloween from "../assets/Halloween.jpg";
 import WavesOfFood from "../assets/WavesOfFood.jpg";
 import WhatsAppClone from "../assets/whatsAppClone.jpg";
+import DayCare from "../assets/Cover.png"
 
 function Projects() {
   const cardData = [
@@ -21,6 +22,11 @@ function Projects() {
       title: "WhatsApp Clone - Messaging App 💬📲",
       description: "A feature-rich Android messaging app built as a WhatsApp clone using Firebase for real-time messaging, user authentication, and media storage. Users can send texts, share media, update their profile, and enjoy a sleek UI similar to WhatsApp. The app also includes options for message deletion, profile customization, and secure authentication.Tech Stack: Java, Firebase, XML.",
       image: WhatsAppClone,
+    },
+    {
+      title: "Bright Mind's Day Home",
+      description: "I designed and developed a custom, responsive website for Bright Minds Dayhome, focusing on user-friendly navigation and mobile optimization. The site reflects the daycare's mission to provide a safe, nurturing environment for children. Key features include interactive sections, clear CTAs, and smooth, engaging design across devices.Tech Stack: JavaScript, HTML, CSS",
+      image: DayCare,
     },
   ];
 

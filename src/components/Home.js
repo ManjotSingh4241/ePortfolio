@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin-logo.png";
 import software from "../assets/softwareDevelopment-logo.png";
-import graphic from "../assets/graphicDesign-logo.png";
+// import graphic from "../assets/graphicDesign-logo.png";
 import gmail from "../assets/gmail-logo.png";
 import instagram from "../assets/instagram-logo.png";
 
@@ -14,9 +14,9 @@ function Home() {
   const openProjects = () => {
     navigate("/softwareProjects");
   };
-  const openGraphicDesigning = () => {
-    navigate("/Designing");
-  };
+  // const openGraphicDesigning = () => {
+  //   navigate("/Designing");
+  // };
 
   return (
     <>
@@ -72,14 +72,14 @@ function Home() {
             <h3 className="roboto-slab-bold">Software Projects</h3>
           </div>
 
-          <div
+          {/* <div
             id="graphic-designing"
             onClick={openGraphicDesigning}
             style={{ cursor: "pointer" }}
           >
             <img src={graphic} alt="Project Logo" class="logo" />
             <h3 className="roboto-slab-bold">Graphic Designing</h3>
-          </div>
+          </div> */}
 
           <div
             id="gmail"
